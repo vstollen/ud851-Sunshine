@@ -117,6 +117,7 @@ public class MainActivity extends AppCompatActivity {
         if (item.getItemId() == R.id.action_refresh) {
             mWeatherTextView.setText("");
             loadWeatherData();
+            return true;
         }
         return super.onOptionsItemSelected(item);
     }
